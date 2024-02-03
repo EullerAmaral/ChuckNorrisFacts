@@ -1,5 +1,5 @@
 import Foundation
 
-struct chuckNorrisFactsData: Codable {
+struct ChuckNorrisFactsData: Codable {
     let value: String
 }

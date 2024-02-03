@@ -64,6 +64,7 @@
 				2AC0DAFD2B6EDE6E0093C435 /* ChuckNorrisFactsViewController */,
 				2AC0DAFA2B6EDDAF0093C435 /* Model */,
 				2AC0DB012B6EDF6E0093C435 /* Others */,
+				2AC0DAF22B6EDB160093C435 /* Info.plist */,
 			);
 			path = chuckNorrisFacts;
 			sourceTree = "<group>";
@@ -100,7 +101,6 @@
 				2AC0DAE62B6EDB130093C435 /* SceneDelegate.swift */,
 				2AC0DAED2B6EDB160093C435 /* Assets.xcassets */,
 				2AC0DAEF2B6EDB160093C435 /* LaunchScreen.storyboard */,
-				2AC0DAF22B6EDB160093C435 /* Info.plist */,
 			);
 			path = Others;
 			sourceTree = "<group>";
