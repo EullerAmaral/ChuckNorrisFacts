@@ -12,6 +12,9 @@
 		2AC0DAE92B6EDB130093C435 /* ChuckNorrisFactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC0DAE82B6EDB130093C435 /* ChuckNorrisFactsViewController.swift */; };
 		2AC0DAEE2B6EDB160093C435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AC0DAED2B6EDB160093C435 /* Assets.xcassets */; };
 		2AC0DAF12B6EDB160093C435 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC0DAEF2B6EDB160093C435 /* LaunchScreen.storyboard */; };
+		2AC0DAF92B6EDD3B0093C435 /* ChuckNorrisFactsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC0DAF82B6EDD3B0093C435 /* ChuckNorrisFactsScreen.swift */; };
+		2AC0DAFC2B6EDDCD0093C435 /* ChuckNorrisFactsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC0DAFB2B6EDDCD0093C435 /* ChuckNorrisFactsModel.swift */; };
+		2AC0DB002B6EDEB50093C435 /* ChuckNorrisFactsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC0DAFF2B6EDEB50093C435 /* ChuckNorrisFactsAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		2AC0DAED2B6EDB160093C435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AC0DAF02B6EDB160093C435 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2AC0DAF22B6EDB160093C435 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AC0DAF82B6EDD3B0093C435 /* ChuckNorrisFactsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsScreen.swift; sourceTree = "<group>"; };
+		2AC0DAFB2B6EDDCD0093C435 /* ChuckNorrisFactsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsModel.swift; sourceTree = "<group>"; };
+		2AC0DAFF2B6EDEB50093C435 /* ChuckNorrisFactsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChuckNorrisFactsAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		2AC0DAE32B6EDB130093C435 /* chuckNorrisFacts */ = {
 			isa = PBXGroup;
 			children = (
+				2AC0DAFE2B6EDE940093C435 /* Service */,
+				2AC0DAFD2B6EDE6E0093C435 /* ChuckNorrisFactsViewController */,
+				2AC0DAFA2B6EDDAF0093C435 /* Model */,
+				2AC0DB012B6EDF6E0093C435 /* Others */,
+			);
+			path = chuckNorrisFacts;
+			sourceTree = "<group>";
+		};
+		2AC0DAFA2B6EDDAF0093C435 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2AC0DAFB2B6EDDCD0093C435 /* ChuckNorrisFactsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2AC0DAFD2B6EDE6E0093C435 /* ChuckNorrisFactsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2AC0DAE82B6EDB130093C435 /* ChuckNorrisFactsViewController.swift */,
+				2AC0DAF82B6EDD3B0093C435 /* ChuckNorrisFactsScreen.swift */,
+			);
+			path = ChuckNorrisFactsViewController;
+			sourceTree = "<group>";
+		};
+		2AC0DAFE2B6EDE940093C435 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2AC0DAFF2B6EDEB50093C435 /* ChuckNorrisFactsAPI.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2AC0DB012B6EDF6E0093C435 /* Others */ = {
+			isa = PBXGroup;
+			children = (
 				2AC0DAE42B6EDB130093C435 /* AppDelegate.swift */,
 				2AC0DAE62B6EDB130093C435 /* SceneDelegate.swift */,
-				2AC0DAE82B6EDB130093C435 /* ChuckNorrisFactsViewController.swift */,
 				2AC0DAED2B6EDB160093C435 /* Assets.xcassets */,
 				2AC0DAEF2B6EDB160093C435 /* LaunchScreen.storyboard */,
 				2AC0DAF22B6EDB160093C435 /* Info.plist */,
 			);
-			path = chuckNorrisFacts;
+			path = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +178,9 @@
 				2AC0DAE92B6EDB130093C435 /* ChuckNorrisFactsViewController.swift in Sources */,
 				2AC0DAE52B6EDB130093C435 /* AppDelegate.swift in Sources */,
 				2AC0DAE72B6EDB130093C435 /* SceneDelegate.swift in Sources */,
+				2AC0DAF92B6EDD3B0093C435 /* ChuckNorrisFactsScreen.swift in Sources */,
+				2AC0DB002B6EDEB50093C435 /* ChuckNorrisFactsAPI.swift in Sources */,
+				2AC0DAFC2B6EDDCD0093C435 /* ChuckNorrisFactsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
