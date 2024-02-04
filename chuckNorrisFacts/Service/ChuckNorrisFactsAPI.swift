@@ -16,7 +16,7 @@ class ChuckNorrisFactsAPI: UIViewController {
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
             if let error = error {
-                print("error")
+                print(error.localizedDescription)
             }
             
             guard let response = response as? HTTPURLResponse else {
@@ -35,7 +35,6 @@ class ChuckNorrisFactsAPI: UIViewController {
                     completion(.failure(error))
                 }
             }
-            
         }
         task.resume()
     }
