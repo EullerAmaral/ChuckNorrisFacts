@@ -8,15 +8,17 @@ class ChuckNorrisFactsAPI: UIViewController {
 
     func getChuckNorrisFacts(completion: @escaping(Result<ChuckNorrisFactsData, Error>) -> Void) {
         
-        var endPoint = "https://api.chucknorris.io/jokes/random"
+        let endPoint = "https://api.chucknorris.io/jokes/random"
 
         guard let url: URL = URL(string: endPoint) else {
             return
         }
         
         let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+            
             if let error = error {
                 print(error.localizedDescription)
+                return
             }
             
             guard let response = response as? HTTPURLResponse else {
@@ -33,6 +35,7 @@ class ChuckNorrisFactsAPI: UIViewController {
                 }
                 catch {
                     completion(.failure(error))
+                    print(response.statusCode)
                 }
             }
         }

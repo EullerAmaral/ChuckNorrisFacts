@@ -16,6 +16,7 @@ class ChuckNorrisFactsScreen: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Chuck Norris facts"
+        label.font = .italicSystemFont(ofSize: 22)
         label.numberOfLines = 0
         label.textAlignment = .center
         return label

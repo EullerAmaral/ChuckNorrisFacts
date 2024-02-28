@@ -18,6 +18,9 @@ class ChuckNorrisFactsViewController: UIViewController {
 extension ChuckNorrisFactsViewController: ChuckNorrisFactsScreenDelegate {
     func tappedButton() {
         
+        chuckNorrisFactsScreen?.factsLabel.text = "Loading..."
+        chuckNorrisFactsScreen?.getFactsButton.setTitle("New fact", for: .normal)
+        
         ChuckNorrisFactsAPI.shared.getChuckNorrisFacts { [weak self] result in
             switch result {
             case .success(let factsData):
